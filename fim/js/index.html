@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIM UAS — Facultad de Ingeniería Mochis</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <div class="top-strip">
+    <div class="wrap top-inner">
+      <span><i class="fas fa-map-marker-alt"></i> Los Mochis, Sinaloa</span>
+      <span><i class="fas fa-phone"></i> 66 88 12 76 41</span>
+      <div class="strip-links">
+        <a href="#">Portal Docentes</a>
+        <a href="#">Portal Alumnos</a>
+        <a href="#">SECIHTI</a>
+        <a href="#">Posgrado</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-fim">FIM</span>
+        <span class="logo-sep">|</span>
+        <span class="logo-text">Facultad de Ingeniería Mochis</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#programas">Programas</a></li>
+        <li class="dd">
+          <a href="#">Servicios <i class="fas fa-chevron-down fa-xs"></i></a>
+          <ul class="submenu">
+            <li><a href="#">Dirección Escolar</a></li>
+            <li><a href="#">Servicios Académicos</a></li>
+            <li><a href="#">Servicios Escolares</a></li>
+            <li><a href="#">Programa de Tutorías</a></li>
+            <li><a href="#">Com. Académica Titulación</a></li>
+          </ul>
+        </li>
+        <li><a href="#mision">Misión y Visión</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="nav-cta">Admisiones <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          Universidad Autónoma de Sinaloa
+        </div>
+        <h1 class="hero-h1">
+          Ingeniería<br>
+          para el<br>
+          <em>futuro</em>
+        </h1>
+        <p class="hero-p">
+          Programas de licenciatura y posgrado con reconocimiento nacional, orientados
+          a la innovación, la ciencia y el desarrollo sostenible de la región.
+        </p>
+        <div class="hero-btns">
+          <a href="#programas" class="btn-solid">Explorar Programas</a>
+          <a href="#contacto" class="btn-line">Contáctanos</a>
+        </div>
+        <div class="hero-meta">
+          <div class="meta-item">
+            <strong>2,500+</strong>
+            <span>Estudiantes</span>
+          </div>
+          <div class="meta-sep"></div>
+          <div class="meta-item">
+            <strong>6</strong>
+            <span>Programas</span>
+          </div>
+          <div class="meta-sep"></div>
+          <div class="meta-item">
+            <strong>50+</strong>
+            <span>Años</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <div class="geo-wrap">
+          <div class="geo-box geo-navy"></div>
+          <div class="geo-box geo-gold"></div>
+          <div class="geo-ring"></div>
+          <div class="geo-label">FIM</div>
+          <div class="geo-badge">
+            <i class="fas fa-award"></i>
+            <span>PNPC<br>CONAHCyT</span>
+          </div>
+          <div class="geo-badge geo-badge-2">
+            <i class="fas fa-medal"></i>
+            <span>CACEI<br>Acreditado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Ingeniería Civil</span><span class="msep">◆</span>
+      <span>Ingeniería Geodésica</span><span class="msep">◆</span>
+      <span>Ingeniería de Software</span><span class="msep">◆</span>
+      <span>Procesos Industriales</span><span class="msep">◆</span>
+      <span>Nanotecnología</span><span class="msep">◆</span>
+      <span>Maestría en Ingeniería</span><span class="msep">◆</span>
+      <span>Doctorado en Ingeniería</span><span class="msep">◆</span>
+      <!-- duplicado para bucle sin corte -->
+      <span>Ingeniería Civil</span><span class="msep">◆</span>
+      <span>Ingeniería Geodésica</span><span class="msep">◆</span>
+      <span>Ingeniería de Software</span><span class="msep">◆</span>
+      <span>Procesos Industriales</span><span class="msep">◆</span>
+      <span>Nanotecnología</span><span class="msep">◆</span>
+      <span>Maestría en Ingeniería</span><span class="msep">◆</span>
+      <span>Doctorado en Ingeniería</span><span class="msep">◆</span>
+    </div>
+  </div>
+
+  <!-- ===== PROGRAMAS (ACORDEÓN) ===== -->
+  <section class="sec" id="programas">
+    <div class="wrap">
+      <div class="sec-top">
+        <div>
+          <div class="sec-label"><span class="label-bar"></span> Oferta Educativa</div>
+          <h2 class="sec-h2">Nuestros<br>Programas</h2>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="atabs-wrap">
+        <button class="atab active" data-type="lic">
+          <i class="fas fa-graduation-cap"></i> Licenciatura
+        </button>
+        <button class="atab" data-type="pos">
+          <i class="fas fa-scroll"></i> Posgrado
+        </button>
+      </div>
+
+      <!-- Acordeón -->
+      <div class="accordion">
+
+        <div class="acc-item" data-type="lic">
+          <button class="acc-hd">
+            <span class="acc-num">01</span>
+            <span class="acc-ico"><i class="fas fa-building"></i></span>
+            <span class="acc-ttl">Ingeniería Civil</span>
+            <span class="acc-mod">Presencial · Plan V y 2022</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Formación en diseño y construcción de infraestructura: edificios, puentes, carreteras y sistemas hidráulicos. Ingenieros capaces de transformar el entorno con ética y responsabilidad.</p>
+            <a href="#" class="acc-link">Ver plan de estudios <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="acc-item" data-type="lic">
+          <button class="acc-hd">
+            <span class="acc-num">02</span>
+            <span class="acc-ico"><i class="fas fa-globe-americas"></i></span>
+            <span class="acc-ttl">Ingeniería Geodésica</span>
+            <span class="acc-mod">Presencial · Plan III y 2022</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Medición y representación del espacio geográfico mediante GPS, Sistemas de Información Geográfica (SIG), fotogrametría y teledetección. Alta demanda en el sector industrial y minero.</p>
+            <a href="#" class="acc-link">Ver plan de estudios <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="acc-item" data-type="lic">
+          <button class="acc-hd">
+            <span class="acc-num">03</span>
+            <span class="acc-ico"><i class="fas fa-code"></i></span>
+            <span class="acc-ttl">Ingeniería de Software</span>
+            <span class="acc-mod">Presencial y Virtual · Plan 2022</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Desarrollo de sistemas, apps web y móviles con metodologías ágiles. Disponible en modalidad presencial y en línea. Alta empleabilidad en el sector tecnológico nacional e internacional.</p>
+            <a href="#" class="acc-link">Ver plan de estudios <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="acc-item" data-type="lic">
+          <button class="acc-hd">
+            <span class="acc-num">04</span>
+            <span class="acc-ico"><i class="fas fa-industry"></i></span>
+            <span class="acc-ttl">Ingeniería en Procesos Industriales</span>
+            <span class="acc-mod">Presencial · Plan 2022</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Optimización de manufactura, gestión de calidad y automatización industrial. Responde a la demanda del sector productivo regional con formación integral en mejora continua.</p>
+            <a href="#" class="acc-link">Ver plan de estudios <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="acc-item" data-type="lic">
+          <button class="acc-hd">
+            <span class="acc-num">05</span>
+            <span class="acc-ico"><i class="fas fa-atom"></i></span>
+            <span class="acc-ttl">Nanotecnología y Energías Renovables</span>
+            <span class="acc-mod">Presencial · Plan 2022</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Innovación en materiales a nanoescala, energía solar, eólica y tecnologías limpias. Programa pionero en la región enfocado en el desarrollo sustentable y la transición energética.</p>
+            <a href="#" class="acc-link">Ver plan de estudios <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="acc-item" data-type="pos">
+          <button class="acc-hd">
+            <span class="acc-num">M</span>
+            <span class="acc-ico"><i class="fas fa-microscope"></i></span>
+            <span class="acc-ttl">Maestría en Ciencias de la Ingeniería</span>
+            <span class="acc-mod">PNPC CONAHCyT</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Programa con reconocimiento del Programa Nacional de Posgrados de Calidad. Investigación aplicada en diversas líneas de la ingeniería con impacto regional y nacional.</p>
+            <a href="#" class="acc-link">Ver programa <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="acc-item" data-type="pos">
+          <button class="acc-hd">
+            <span class="acc-num">D</span>
+            <span class="acc-ico"><i class="fas fa-flask"></i></span>
+            <span class="acc-ttl">Doctorado en Ciencias de la Ingeniería</span>
+            <span class="acc-mod">PNPC CONAHCyT</span>
+            <span class="acc-tog"><i class="fas fa-plus"></i></span>
+          </button>
+          <div class="acc-body">
+            <p>Formación de investigadores de alto nivel con líneas de investigación consolidadas. Aporte al desarrollo científico y tecnológico con impacto nacional e internacional.</p>
+            <a href="#" class="acc-link">Ver programa <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MISIÓN / ABOUT ===== -->
+  <section class="about-sec" id="mision">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="sec-label"><span class="label-bar label-bar-wh"></span> Misión y Visión</div>
+          <h2 class="about-h2">Nuestra<br>Misión</h2>
+          <blockquote class="about-quote">
+            "Formar ingenieros con visión científica, tecnológica y humanista,
+            comprometidos con el desarrollo sostenible de la región y del país."
+          </blockquote>
+          <div class="pillars">
+            <div class="pillar">
+              <span class="pillar-num">01</span>
+              <div>
+                <h4>Investigación</h4>
+                <p>Proyectos de impacto real con financiamiento CONAHCyT y convenios empresariales.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num">02</span>
+              <div>
+                <h4>Vinculación</h4>
+                <p>Estadías y redes de egresados en las industrias líderes del noroeste de México.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <span class="pillar-num">03</span>
+              <div>
+                <h4>Movilidad</h4>
+                <p>Intercambios con universidades nacionales e internacionales vía convenios UAS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-right" aria-hidden="true">
+          <div class="acard-big">
+            <div class="acard-num">50<span>+</span></div>
+            <div class="acard-lbl">Años formando<br>ingenieros</div>
+          </div>
+          <div class="acard-sm">
+            <i class="fas fa-award"></i>
+            <span>Programas CACEI<br>Acreditados</span>
+          </div>
+          <div class="acard-sm acard-sm-r">
+            <i class="fas fa-globe"></i>
+            <span>Convenios<br>Internacionales</span>
+          </div>
+          <div class="acard-accent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS BAND ===== -->
+  <div class="stats-band">
+    <div class="wrap stats-inner">
+      <div class="sbi">
+        <div class="sbi-num">2,500<span>+</span></div>
+        <div class="sbi-lbl">Estudiantes activos en programas de licenciatura y posgrado</div>
+      </div>
+      <div class="sbi-div"></div>
+      <div class="sbi">
+        <div class="sbi-num">6</div>
+        <div class="sbi-lbl">Programas académicos con reconocimiento nacional</div>
+      </div>
+      <div class="sbi-div"></div>
+      <div class="sbi">
+        <div class="sbi-num">5</div>
+        <div class="sbi-lbl">Cuerpos académicos de investigación activos</div>
+      </div>
+      <div class="sbi-div"></div>
+      <div class="sbi">
+        <div class="sbi-num">PNPC</div>
+        <div class="sbi-lbl">Posgrado con reconocimiento CONAHCyT</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NOTICIAS ===== -->
+  <section class="sec" id="noticias">
+    <div class="wrap">
+      <div class="news-hdr">
+        <div>
+          <div class="sec-label"><span class="label-bar"></span> Noticias</div>
+          <h2 class="sec-h2">Lo más reciente</h2>
+        </div>
+        <a href="#" class="ver-mas">Ver todas <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <div class="news-mag">
+        <!-- Nota destacada -->
+        <div class="nm-feat">
+          <div class="nm-img nm-1">
+            <span class="nm-cat">Académico</span>
+          </div>
+          <div class="nm-body">
+            <span class="nm-date">Marzo 2025</span>
+            <h3>Clases espejo con la Universidad Continental de Perú</h3>
+            <p>La FIM fortalece su vinculación internacional mediante clases espejo entre estudiantes de ambas instituciones, con el apoyo de la DGVRI-UAS.</p>
+            <a href="#" class="nm-link">Leer nota completa <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <!-- Columna derecha -->
+        <div class="nm-col">
+          <div class="nm-card">
+            <div class="nm-img-sm nm-2"><span class="nm-cat">Convocatoria</span></div>
+            <div class="nm-card-body">
+              <span class="nm-date">Feb 2025</span>
+              <h4>Programación de exámenes extraordinarios</h4>
+              <a href="#" class="nm-link-sm">Leer más <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="nm-card">
+            <div class="nm-img-sm nm-3"><span class="nm-cat">Investigación</span></div>
+            <div class="nm-card-body">
+              <span class="nm-date">Ene 2025</span>
+              <h4>Financiamiento CONAHCyT para proyectos FIM</h4>
+              <a href="#" class="nm-link-sm">Leer más <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="nm-card nm-text-card">
+            <i class="fas fa-newspaper nm-ico-lg"></i>
+            <p>Mantente al día con todas las noticias y convocatorias de la comunidad FIM.</p>
+            <a href="#" class="nm-link">Ver archivo <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BAND ===== -->
+  <div class="cta-band">
+    <div class="wrap cta-inner">
+      <div>
+        <p class="cta-eyebrow">¿Listo para dar el siguiente paso?</p>
+        <h2 class="cta-h2">Inscríbete a la FIM</h2>
+      </div>
+      <div class="cta-btns">
+        <a href="#contacto" class="btn-cta-main">Iniciar proceso <i class="fas fa-arrow-right"></i></a>
+        <a href="#programas" class="btn-cta-sec">Ver programas</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ACCESOS RÁPIDOS ===== -->
+  <section class="accesos-sec">
+    <div class="wrap">
+      <h3 class="acc-title">Accesos Rápidos</h3>
+      <div class="acc-grid">
+        <a href="#" class="acc-tile">
+          <i class="fas fa-school"></i>
+          <span>Dirección Escolar</span>
+          <i class="fas fa-arrow-right tile-arr"></i>
+        </a>
+        <a href="#" class="acc-tile">
+          <i class="fas fa-book"></i>
+          <span>Servicios Académicos</span>
+          <i class="fas fa-arrow-right tile-arr"></i>
+        </a>
+        <a href="#" class="acc-tile">
+          <i class="fas fa-id-card"></i>
+          <span>Servicios Escolares</span>
+          <i class="fas fa-arrow-right tile-arr"></i>
+        </a>
+        <a href="#" class="acc-tile">
+          <i class="fas fa-users"></i>
+          <span>Programa de Tutorías</span>
+          <i class="fas fa-arrow-right tile-arr"></i>
+        </a>
+        <a href="#" class="acc-tile">
+          <i class="fas fa-briefcase"></i>
+          <span>Egresados</span>
+          <i class="fas fa-arrow-right tile-arr"></i>
+        </a>
+        <a href="#" class="acc-tile">
+          <i class="fas fa-flask"></i>
+          <span>SECIHTI</span>
+          <i class="fas fa-arrow-right tile-arr"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="sec" id="contacto">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <div class="sec-label"><span class="label-bar"></span> Contacto</div>
+          <h2 class="sec-h2">Estamos aquí<br>para ayudarte</h2>
+          <div class="cinfo-list">
+            <div class="cinfo-item">
+              <div class="ci-ico"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <strong>Dirección</strong>
+                <span>Fuente de Poseidón y Ángel Flores S/N, Los Mochis, Sin.</span>
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="ci-ico"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong>Teléfono</strong>
+                <span>66 88 12 76 41</span>
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="ci-ico"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Correo</strong>
+                <span>direccion@fim.uas.edu.mx</span>
+              </div>
+            </div>
+            <div class="cinfo-item">
+              <div class="ci-ico"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong>Horario</strong>
+                <span>Lunes – Viernes, 8:00 – 15:00 hrs</span>
+              </div>
+            </div>
+          </div>
+          <div class="soc-row">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="cform" id="cform">
+            <h3>Envíanos un mensaje</h3>
+            <div class="frow">
+              <div class="fg">
+                <label for="fn">Nombre</label>
+                <input type="text" id="fn" placeholder="Tu nombre completo">
+              </div>
+              <div class="fg">
+                <label for="fe">Correo</label>
+                <input type="email" id="fe" placeholder="correo@ejemplo.com">
+              </div>
+            </div>
+            <div class="fg">
+              <label for="fas2">Asunto</label>
+              <select id="fas2">
+                <option>Información sobre programas</option>
+                <option>Proceso de admisión</option>
+                <option>Servicios escolares</option>
+                <option>Posgrado</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="fg">
+              <label for="fm">Mensaje</label>
+              <textarea id="fm" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+            <button type="submit" class="btn-solid btn-block">
+              Enviar mensaje <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="ft-top">
+        <div class="ft-brand">
+          <a href="#" class="logo">
+            <span class="logo-fim logo-fim-ft">FIM</span>
+            <span class="logo-sep logo-sep-ft">|</span>
+            <span class="logo-text logo-text-ft">Facultad de Ingeniería Mochis</span>
+          </a>
+          <p>Universidad Autónoma de Sinaloa. Formando ingenieros con visión científica, tecnológica y humanista desde hace más de 50 años.</p>
+          <div class="ft-soc">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="ft-cols">
+          <div class="ft-col">
+            <h5>Programas</h5>
+            <ul>
+              <li><a href="#">Ing. Civil</a></li>
+              <li><a href="#">Ing. Geodésica</a></li>
+              <li><a href="#">Ing. de Software</a></li>
+              <li><a href="#">Procesos Industriales</a></li>
+              <li><a href="#">Nanotecnología</a></li>
+              <li><a href="#">Posgrado</a></li>
+            </ul>
+          </div>
+          <div class="ft-col">
+            <h5>Institución</h5>
+            <ul>
+              <li><a href="#">Misión y Visión</a></li>
+              <li><a href="#">Dirección</a></li>
+              <li><a href="#">Investigación</a></li>
+              <li><a href="#">Egresados</a></li>
+              <li><a href="#">SECIHTI</a></li>
+            </ul>
+          </div>
+          <div class="ft-col">
+            <h5>Contacto</h5>
+            <ul class="ft-contact">
+              <li><i class="fas fa-map-marker-alt"></i> Fuente de Poseidón y Ángel Flores S/N, Los Mochis</li>
+              <li><i class="fas fa-phone"></i> 66 88 12 76 41</li>
+              <li><i class="fas fa-envelope"></i> direccion@fim.uas.edu.mx</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="ft-bottom">
+        <p>© 2025 Facultad de Ingeniería Mochis — Universidad Autónoma de Sinaloa. Todos los derechos reservados.</p>
+        <p>Propuesta de rediseño web · FIM UAS</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
