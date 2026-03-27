@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio #25: Tablas de multiplicar</title>
+    <style>
+        .tabla {
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #000;
+            padding: 10px;
+            vertical-align: top;
+        }
+        h3 {
+            margin: 0 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tablas de multiplicar del 1 al 10</h2>
+    <button onclick="generarTablas()">Generar tablas de multiplicar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function generarTablas() {
+            var contenido = "";
+            for (var i = 1; i <= 10; i++) {
+                contenido += "<div class='tabla'><h3>Tabla del " + i + "</h3>";
+                for (var j = 1; j <= 10; j++) {
+                    contenido += i + " x " + j + " = " + (i * j) + "<br>";
+                }
+                contenido += "</div>";
+            }
+            document.getElementById("resultado").innerHTML = contenido;
+        }
+    </script>
+
+</body>
+</html>

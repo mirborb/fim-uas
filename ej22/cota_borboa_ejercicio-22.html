@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio #22: La fórmula general</title>
+</head>
+<body>
+
+    <h2>Fórmula General (ax² + bx + c = 0)</h2>
+
+    <p>
+        Valor a: <input type="text" id="valorA">
+    </p>
+    <p>
+        Valor b: <input type="text" id="valorB">
+    </p>
+    <p>
+        Valor c: <input type="text" id="valorC">
+    </p>
+    <p>
+        <button onclick="calcular()">Calcular</button>
+    </p>
+
+    <script>
+        function calcular() {
+            var a = parseFloat(document.getElementById("valorA").value);
+            var b = parseFloat(document.getElementById("valorB").value);
+            var c = parseFloat(document.getElementById("valorC").value);
+
+            var discriminante = (b * b) - (4 * a * c);
+            var x1 = (-b + Math.sqrt(discriminante)) / (2 * a);
+            var x2 = (-b - Math.sqrt(discriminante)) / (2 * a);
+
+            alert("x1 = " + x1 + "\nx2 = " + x2);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio #23: El IMC con JavaScript</title>
+</head>
+<body>
+
+    <h2>Índice de Masa Corporal (IMC)</h2>
+
+    <p>
+        Peso (kg): <input type="text" id="peso">
+    </p>
+    <p>
+        Estatura (m): <input type="text" id="estatura">
+    </p>
+    <p>
+        <button onclick="calcularIMC()">Calcular</button>
+    </p>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularIMC() {
+            var peso = parseFloat(document.getElementById("peso").value);
+            var estatura = parseFloat(document.getElementById("estatura").value);
+
+            var imc = peso / (estatura * estatura);
+            var grado;
+
+            if (imc < 18.5) {
+                grado = "Bajo peso";
+            } else if (imc < 24.9) {
+                grado = "Normal";
+            } else if (imc < 29.9) {
+                grado = "Sobrepeso";
+            } else {
+                grado = "Obesidad";
+            }
+
+            document.getElementById("resultado").innerHTML = "IMC: " + imc.toFixed(2) + " - Grado: " + grado;
+        }
+    </script>
+
+</body>
+</html>

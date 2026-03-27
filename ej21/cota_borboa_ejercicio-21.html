@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio #21: Operaciones aritméticas con formularios</title>
+</head>
+<body>
+
+    <h2>Operaciones aritméticas con formularios</h2>
+
+    <p>
+        Valor A: <input type="text" id="valorA">
+    </p>
+    <p>
+        Valor B: <input type="text" id="valorB">
+    </p>
+    <p>
+        <button onclick="calcularSuma()">Suma</button>
+        <button onclick="calcularResta()">Resta</button>
+        <button onclick="calcularDivision()">División</button>
+        <button onclick="calcularExponenciacion()">Exponenciación</button>
+    </p>
+    <p id="resultado"></p>
+
+    <script>
+        function calcularSuma() {
+            var a = parseFloat(document.getElementById("valorA").value);
+            var b = parseFloat(document.getElementById("valorB").value);
+            document.getElementById("resultado").innerHTML = "Suma: " + (a + b);
+        }
+
+        function calcularResta() {
+            var a = parseFloat(document.getElementById("valorA").value);
+            var b = parseFloat(document.getElementById("valorB").value);
+            document.getElementById("resultado").innerHTML = "Resta: " + (a - b);
+        }
+
+        function calcularDivision() {
+            var a = parseFloat(document.getElementById("valorA").value);
+            var b = parseFloat(document.getElementById("valorB").value);
+            document.getElementById("resultado").innerHTML = "División: " + (a / b);
+        }
+
+        function calcularExponenciacion() {
+            var a = parseFloat(document.getElementById("valorA").value);
+            var b = parseFloat(document.getElementById("valorB").value);
+            document.getElementById("resultado").innerHTML = "Exponenciación: " + (a ** b);
+        }
+    </script>
+
+</body>
+</html>

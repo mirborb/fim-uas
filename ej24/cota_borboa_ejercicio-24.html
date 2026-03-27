@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio #24: Fechas con JavaScript</title>
+</head>
+<body>
+
+    <h2>Fecha actual</h2>
+    <p id="fecha"></p>
+
+    <script>
+        var hoy = new Date();
+        var dia = hoy.getDay();
+        var numeroDia = hoy.getDate();
+        var mes = hoy.getMonth();
+        var anio = hoy.getFullYear();
+
+        var nombreDia;
+        switch (dia) {
+            case 0: nombreDia = "domingo"; break;
+            case 1: nombreDia = "lunes"; break;
+            case 2: nombreDia = "martes"; break;
+            case 3: nombreDia = "miércoles"; break;
+            case 4: nombreDia = "jueves"; break;
+            case 5: nombreDia = "viernes"; break;
+            case 6: nombreDia = "sábado"; break;
+        }
+
+        var nombreMes;
+        switch (mes) {
+            case 0:  nombreMes = "Enero"; break;
+            case 1:  nombreMes = "Febrero"; break;
+            case 2:  nombreMes = "Marzo"; break;
+            case 3:  nombreMes = "Abril"; break;
+            case 4:  nombreMes = "Mayo"; break;
+            case 5:  nombreMes = "Junio"; break;
+            case 6:  nombreMes = "Julio"; break;
+            case 7:  nombreMes = "Agosto"; break;
+            case 8:  nombreMes = "Septiembre"; break;
+            case 9:  nombreMes = "Octubre"; break;
+            case 10: nombreMes = "Noviembre"; break;
+            case 11: nombreMes = "Diciembre"; break;
+        }
+
+        document.getElementById("fecha").innerHTML =
+            "Hoy es " + nombreDia + " " + numeroDia + " de " + nombreMes + " del año " + anio;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio #26: Tablas de multiplicar</title>
+    <style>
+        .tabla {
+            display: inline-block;
+            margin: 10px;
+            border: 1px solid #000;
+            padding: 10px;
+            vertical-align: top;
+        }
+        h3 {
+            margin: 0 0 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tablas de multiplicar</h2>
+    <p>
+        Número de tablas: <input type="number" id="limite" min="1">
+    </p>
+    <button onclick="generarTablas()">Generar tablas de multiplicar</button>
+    <div id="resultado"></div>
+
+    <script>
+        function generarTablas() {
+            var limite = parseInt(document.getElementById("limite").value);
+
+            if (isNaN(limite) || limite <= 0) {
+                alert("Ingresa un número positivo y entero.");
+                return;
+            }
+
+            var contenido = "";
+            for (var i = 1; i <= limite; i++) {
+                contenido += "<div class='tabla'><h3>Tabla del " + i + "</h3>";
+                for (var j = 1; j <= 10; j++) {
+                    contenido += i + " x " + j + " = " + (i * j) + "<br>";
+                }
+                contenido += "</div>";
+            }
+            document.getElementById("resultado").innerHTML = contenido;
+        }
+    </script>
+
+</body>
+</html>
